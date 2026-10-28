@@ -1,0 +1,6 @@
+backups/
+references/
+*.log
+node_modules/
+.preview-profile/
+artifacts/

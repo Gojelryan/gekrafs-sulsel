@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="DPW GEKRAFS Sulawesi Selatan. Wadah kolaborasi pelaku ekonomi kreatif untuk belajar, berkarya, dan bertumbuh bersama."/>
+    <meta name="theme-color" content="#007e94" />
+    <title>GEKRAFS Sulawesi Selatan — Gerakan Ekonomi Kreatif Nasional</title>
+    <link rel="icon" type="image/png" href="assets/logo/logo-gekrafs.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/portfolio-data.js" defer></script>
+    <script src="assets/js/portfolio.js" defer></script>
+  </head>
+  <body class="bg-white text-[#102b37]">
+    <a href="#konten" class="skip-link">Lewati navigasi</a>
+    <header class="sticky top-0 z-50 border-b border-slate-100 bg-white">
+      <div
+        class="
+          mx-auto flex min-h-[76px] max-w-7xl items-center justify-between gap-4 px-5
+          lg:min-h-[94px] lg:px-8
+        "
+      >
+        <a
+          href="#beranda"
+          aria-label="GEKRAFS Sulawesi Selatan — Beranda"
+          class="flex min-w-0 items-center gap-3"
+        >
+          <img
+            src="assets/logo/logo-gekrafs.png"
+            alt=""
+            class="h-12 w-16 shrink-0 object-contain"
+            width="64"
+            height="48"
+          />
+          <span>
+            <span class="block text-xl font-extrabold text-[#007e94]">GEKRAFS</span>
+            <span class="block text-[10px] tracking-[.08em] sm:text-[11px]">SULAWESI SELATAN</span>
+          </span>
+        </a>
+        <nav
+          aria-label="Navigasi utama"
+          class="nav-links hidden items-center gap-7 text-sm font-medium lg:flex"
+        >
+          <a href="#beranda">Beranda</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#program">Program</a>
+          <a href="#portofolio">Portofolio</a>
+          <a href="#pengurus">Pengurus</a>
+        </nav>
+        <div class="hidden lg:block">
+          <a
+            href="https://wa.me/6282292998004?text=Halo%20GEKRAFS%20Sulawesi%20Selatan%2C%20saya%20ingin%20mendapatkan%20informasi%20untuk%20bergabung."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="
+              inline-flex min-h-[48px] items-center justify-center gap-4 rounded-lg bg-[#00acc6]
+              px-6 py-3 text-center text-sm font-bold text-white transition hover:bg-[#007e94]
+            "
+          >
+            Bergabung
+            <span aria-hidden="true">↗</span>
+            <span class="sr-only">melalui WhatsApp (tab baru)</span>
+          </a>
+        </div>
+        <button
+          id="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Buka menu navigasi"
+          class="
+            flex h-12 w-12 shrink-0 items-center justify-center rounded-lg text-[#007e94]
+            hover:bg-cyan-50 lg:hidden
+          "
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path id="menu-icon" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <nav
+        id="mobile-menu"
+        aria-label="Navigasi mobile"
+        class="nav-links border-t border-slate-100 px-5 pb-5 lg:hidden"
+        hidden
+      >
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#program">Program</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#pengurus">Pengurus</a>
+        <a
+          href="https://wa.me/6282292998004?text=Halo%20GEKRAFS%20Sulawesi%20Selatan%2C%20saya%20ingin%20mendapatkan%20informasi%20untuk%20bergabung."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="
+            inline-flex min-h-[48px] items-center justify-center gap-4 rounded-lg bg-[#00acc6] px-6
+            py-3 text-center text-sm font-bold text-white transition hover:bg-[#007e94]
+          "
+        >
+          Bergabung
+          <span aria-hidden="true">↗</span>
+          <span class="sr-only">melalui WhatsApp (tab baru)</span>
+        </a>
+      </nav>
+    </header>
+    <main id="konten">
+      <section
+        id="beranda"
+        aria-labelledby="hero-title"
+        class="
+          hero-fullscreen relative isolate flex w-full items-center overflow-hidden bg-[#052b3c]
+          text-white
+        "
+      >
+        <img
+          src="assets/images/hero/hero.jpg"
+          alt=""
+          fetchpriority="high"
+          class="absolute inset-0 -z-20 h-full w-full object-cover object-center"
+          data-hero
+        />
+        <div
+          class="
+            absolute inset-0 -z-10 bg-gradient-to-r from-[#052b3c] via-[#052b3c]/80 to-[#052b3c]/30
+          "
+        ></div>
+        <img
+          src="assets/ornaments/panrita-white.svg"
+          alt=""
+          aria-hidden="true"
+          width="168"
+          height="159"
+          draggable="false"
+          class="hero-ornament"
+        />
+        <div class="hero-content relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-8">
+          <p class="mb-6 flex items-center gap-3 text-[10px] font-bold tracking-widest sm:text-xs">
+            <span class="h-2 w-2 rounded-full bg-[#ffd344]"></span>
+            DPW GEKRAFS SULAWESI SELATAN
+          </p>
+          <h1
+            id="hero-title"
+            class="
+              max-w-4xl text-4xl font-extrabold leading-[1.17] tracking-[-.045em] sm:text-5xl
+              lg:text-[64px]
+            "
+          >
+            Gerakan Bersama Untuk
+            <br />
+            Masa Depan
+            <br />
+            Ekonomi Kreatif.
+          </h1>
+          <p class="mt-6 max-w-xl text-sm leading-7 text-[#e7f2f5] sm:text-lg sm:leading-8">
+            Menyatukan potensi, menghubungkan karya, dan menggerakkan ekonomi kreatif Sulawesi
+            Selatan.
+          </p>
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#tentang"
+              class="
+                inline-flex min-h-[54px] items-center justify-center gap-5 rounded-lg bg-[#00acc6]
+                px-6 text-sm font-bold hover:bg-[#007e94]
+              "
+            >
+              Kenali GEKRAFS
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href="#program"
+              class="
+                inline-flex min-h-[54px] items-center justify-center gap-5 rounded-lg border
+                border-white px-6 text-sm font-bold hover:bg-white/10
+              "
+            >
+              Jelajahi program
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="hero-highlights bg-[#00acc6] text-white" aria-label="Semangat GEKRAFS">
+        <ul class="mx-auto grid h-full max-w-7xl grid-cols-3 items-center gap-3 px-4 sm:px-8">
+          <li class="flex flex-col items-center justify-center gap-2 text-center sm:flex-row sm:gap-3">
+            <i data-lucide="palette" aria-hidden="true" class="h-5 w-5 shrink-0 text-[#ffd344]"></i>
+            <span class="text-[9px] font-medium leading-4 sm:text-xs">KARYA LOKAL</span>
+          </li>
+          <li class="flex flex-col items-center justify-center gap-2 text-center sm:flex-row sm:gap-3">
+            <i data-lucide="handshake" aria-hidden="true" class="h-5 w-5 shrink-0 text-[#ffd344]"></i>
+            <span class="text-[9px] font-medium leading-4 sm:text-xs">KOLABORASI LINTAS SEKTOR</span>
+          </li>
+          <li class="flex flex-col items-center justify-center gap-2 text-center sm:flex-row sm:gap-3">
+            <i
+              data-lucide="briefcase-business"
+              aria-hidden="true"
+              class="h-5 w-5 shrink-0 text-[#ffd344]"
+            ></i>
+            <span class="text-[9px] font-medium leading-4 sm:text-xs">PELUANG BISNIS</span>
+          </li>
+        </ul>
+      </div>
+      <section
+        id="tentang"
+        aria-labelledby="tentang-title"
+        class="section-shell grid items-center gap-8 lg:grid-cols-2 lg:gap-16"
+      >
+        <div class="relative isolate pb-5">
+          <div class="asset-frame h-[300px] rounded-2xl sm:h-[400px]">
+            <img
+              src="assets/images/about/kerajinan.jpg"
+              alt="Kerajinan dan karya lokal Sulawesi Selatan"
+              loading="lazy"
+            />
+            <span class="asset-placeholder" hidden>Kerajinan dan karya lokal Sulawesi Selatan</span>
+          </div>
+          <div
+            class="absolute bottom-0 left-5 right-5 z-10 rounded-2xl bg-[#ffd344] sm:left-8 sm:right-8"
+          >
+            <p class="about-caption text-lg font-extrabold sm:text-2xl">
+              Beragam talenta.
+              <br />
+              Satu gerakan bersama.
+            </p>
+            <img
+              src="assets/ornaments/panrita-white.svg"
+              alt=""
+              aria-hidden="true"
+              width="168"
+              height="159"
+              loading="lazy"
+              draggable="false"
+              class="about-ornament"
+            />
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow">Tentang GEKRAFS</p>
+          <h2 id="tentang-title" class="section-title">
+            Wadah Kreatif.
+            <br />
+            Penggerak potensi.
+          </h2>
+          <p class="body-copy mt-6">
+            GEKRAFS adalah singkatan dari Gerakan Ekonomi Kreatif Nasional, sebuah wadah yang
+            menaungi para pelaku ekonomi kreatif di Indonesia. Organisasi ini hadir untuk menyatukan
+            komunitas, seniman, pelaku usaha, dan para pekerja kreatif agar dapat berkembang
+            bersama.
+          </p>
+          <p class="body-copy mt-4">
+            Melalui GEKRAFS, diharapkan ekosistem ekonomi kreatif di tanah air semakin kuat, maju,
+            dan mampu memberikan manfaat yang besar bagi masyarakat serta perekonomian nasional.
+          </p>
+          <p
+            class="mt-6 border-l-4 border-[#ffd344] pl-4 text-sm font-bold leading-6 text-[#007e94]"
+          >
+            Berakar di Sulawesi Selatan, terhubung secara nasional.
+          </p>
+        </div>
+      </section>
+      <section aria-labelledby="sektor-title" class="bg-[#edf9fb]">
+        <div class="mx-auto max-w-7xl px-6 pb-12 pt-10 md:pb-16 lg:px-12 lg:pb-[76px] lg:pt-11">
+          <p
+            class="
+              flex items-center gap-3 text-[11px] font-extrabold tracking-[.12em] text-[#007e94]
+            "
+          >
+            <span aria-hidden="true" class="h-[3px] w-5 bg-[#ffd344]"></span>
+            Ekosistem kreatif
+          </p>
+          <div class="mt-5 grid items-center gap-5 lg:grid-cols-[1.4fr_1fr] lg:gap-12">
+            <h2
+              id="sektor-title"
+              class="
+                text-[30px] font-normal leading-[1.2] tracking-[-.04em] text-[#102b37]
+                sm:text-[36px] lg:text-[40px]
+              "
+            >
+              17 Subsektor,
+              <br />
+              Satu Energi Kolaborasi.
+            </h2>
+            <div>
+              <p class="text-sm leading-7 text-[#506771]">
+                Dari seluruh subsektor tersebut bertemu dalam ekosistem yang saling menguatkan.
+              </p>
+              <p class="mt-2 text-[13px] leading-6 text-[#007e94]">
+                Temukan ruang untuk potensimu.
+              </p>
+            </div>
+          </div>
+          <ul class="mt-8 grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-4">
+            <li class="sector-card">
+              <i data-lucide="smartphone" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Aplikasi</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="gamepad-2" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Pengembangan Permainan</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="building-2" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Arsitektur</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="armchair" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Desain Interior</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="pen-tool" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Desain Komunikasi Visual (DKV)</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="box" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Desain Produk</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="shirt" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Fashion</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="clapperboard" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Film, Animasi &amp; Video</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="hand" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Kriya</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="camera" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Fotografi</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="utensils" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Kuliner</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="music-2" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Musik</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="book-open" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Penerbitan</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="megaphone" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Periklanan</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="drama" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Seni Pertunjukan</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="radio" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Televisi &amp; Radio</span>
+            </li>
+            <li class="sector-card">
+              <i data-lucide="palette" aria-hidden="true" stroke-width="1.5"></i>
+              <span>Seni Rupa</span>
+            </li>
+            <li class="min-w-0 lg:col-span-3">
+              <a
+                href="#bergabung"
+                class="
+                  flex h-full min-h-[76px] items-center justify-between gap-2 rounded-lg
+                  bg-[#00acc6] px-3 py-3 text-[11px] font-normal leading-4 text-white transition
+                  hover:bg-[#007e94] sm:gap-4 sm:px-6 sm:py-4 sm:text-base sm:leading-7 lg:text-lg
+                "
+              >
+                <span>Beda bidang, saling menguatkan.</span>
+                <i
+                  data-lucide="arrow-up-right"
+                  aria-hidden="true"
+                  stroke-width="1.5"
+                  class="h-4 w-4 shrink-0 text-[#ffd344] sm:h-6 sm:w-6"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        aria-labelledby="visi-title"
+        class="section-shell grid gap-10 lg:grid-cols-2 lg:gap-16"
+      >
+        <div class="rounded-2xl bg-[#007e94] p-7 text-white sm:p-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-[#b9edf3]">Visi kami</p>
+          <h2 id="visi-title" class="mt-4 text-3xl font-normal leading-tight sm:text-4xl">
+            Kreatif Berkarya,
+            <br />
+            Hidup Sejahtera.
+          </h2>
+          <p class="mt-6 text-sm leading-7 text-[#e7f2f5]">
+            Menjadikan Ekonomi Kreatif sebagai alternatif sumber penghasilan yang nyata dan
+            berkelanjutan bagi masyarakat Sulawesi Selatan.
+          </p>
+          <p
+            class="
+              mt-10 border-t border-white/25 pt-6 text-xs font-bold tracking-wider text-[#ffd344]
+            "
+          >
+            KARYA BERMAKNA, PELUANG BERKELANJUTAN.
+          </p>
+        </div>
+        <div>
+          <p class="eyebrow">Misi kami</p>
+          <h2 class="section-title">
+            Langkah nyata untuk
+            <br />
+            bertumbuh bersama.
+          </h2>
+          <ol class="mt-6 space-y-5">
+            <li class="flex gap-4 border-b border-slate-100 pb-5">
+              <span class="font-extrabold text-[#00acc6]">01</span>
+              <p class="body-copy">
+                Menjadikan Ekonomi Kreatif sebagai alternatif sumber penghasilan yang nyata dan
+                berkelanjutan bagi masyarakat Sulawesi Selatan.
+              </p>
+            </li>
+            <li class="flex gap-4 border-b border-slate-100 pb-5">
+              <span class="font-extrabold text-[#00acc6]">02</span>
+              <p class="body-copy">
+                Membantu memasarkan karya lokal agar lebih dikenal dan bernilai jual.
+              </p>
+            </li>
+            <li class="flex gap-4 border-b border-slate-100 pb-5">
+              <span class="font-extrabold text-[#00acc6]">03</span>
+              <p class="body-copy">
+                Menjalin kerja sama yang saling menguntungkan antar pelaku kreatif.
+              </p>
+            </li>
+            <li class="flex gap-4 border-b border-slate-100 pb-5">
+              <span class="font-extrabold text-[#00acc6]">04</span>
+              <p class="body-copy">
+                Melestarikan budaya daerah lewat karya yang relevan dengan masa kini.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section aria-labelledby="dampak-title" class="bg-[#062435] text-white">
+        <div class="mx-auto max-w-7xl px-6 py-12 md:py-16 lg:px-12 lg:py-[72px]">
+          <p class="flex items-center gap-3 text-[11px] font-extrabold tracking-[.12em]">
+            <span aria-hidden="true" class="h-[3px] w-5 bg-[#ffd344]"></span>
+            Arah dampak
+          </p>
+          <div class="mt-5 grid gap-5 lg:grid-cols-[.95fr_1.05fr] lg:gap-10">
+            <h2
+              id="dampak-title"
+              class="
+                text-[30px] font-normal leading-[1.18] tracking-[-.04em] sm:text-[36px]
+                lg:text-[40px]
+              "
+            >
+              Kreativitas bergerak.
+              <br />
+              Daerah berdaya.
+            </h2>
+            <p class="max-w-2xl text-base leading-7 text-[#d5e5ec] lg:text-[20px] lg:leading-8">
+              Ekonomi kreatif bukan hanya tentang ide, tetapi tentang dampak nyata bagi Sulawesi
+              Selatan dan masyarakatnya.
+            </p>
+          </div>
+          <div class="mt-9 grid gap-7 sm:grid-cols-2 lg:mt-11 lg:grid-cols-4">
+            <article class="border-t border-[#294553] pt-6">
+              <i
+                data-lucide="sprout"
+                aria-hidden="true"
+                class="mb-5 block h-7 w-7 text-[#ffd344]"
+                stroke-width="1.5"
+              ></i>
+              <h3 class="text-lg font-bold leading-7 tracking-[-.025em]">Penghasilan nyata</h3>
+              <p class="mt-3 text-[13px] leading-6 text-[#bed2dc]">
+                Meningkatkan peran ekonomi kreatif sebagai sumber penghasilan yang nyata bagi
+                masyarakat Sulawesi Selatan.
+              </p>
+            </article>
+            <article class="border-t border-[#294553] pt-6">
+              <i
+                data-lucide="briefcase-business"
+                aria-hidden="true"
+                class="mb-5 block h-7 w-7 text-[#ffd344]"
+                stroke-width="1.5"
+              ></i>
+              <h3 class="text-lg font-bold leading-7 tracking-[-.025em]">Lapangan kerja baru</h3>
+              <p class="mt-3 text-[13px] leading-6 text-[#bed2dc]">
+                Menciptakan lapangan kerja baru yang berkelanjutan di sektor ekonomi kreatif daerah.
+              </p>
+            </article>
+            <article class="border-t border-[#294553] pt-6">
+              <i
+                data-lucide="handshake"
+                aria-hidden="true"
+                class="mb-5 block h-7 w-7 text-[#ffd344]"
+                stroke-width="1.5"
+              ></i>
+              <h3 class="text-lg font-bold leading-7 tracking-[-.025em]">Kesejahteraan pelaku</h3>
+              <p class="mt-3 text-[13px] leading-6 text-[#bed2dc]">
+                Meningkatkan pendapatan dan kesejahteraan para pelaku ekonomi kreatif di seluruh
+                Sulawesi Selatan.
+              </p>
+            </article>
+            <article class="border-t border-[#294553] pt-6">
+              <i
+                data-lucide="trending-up"
+                aria-hidden="true"
+                class="mb-5 block h-7 w-7 text-[#ffd344]"
+                stroke-width="1.5"
+              ></i>
+              <h3 class="text-lg font-bold leading-7 tracking-[-.025em]">Karya berdaya saing</h3>
+              <p class="mt-3 text-[13px] leading-6 text-[#bed2dc]">
+                Meningkatkan nilai jual dan daya saing karya kreatif lokal di pasar yang lebih luas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="program" aria-labelledby="program-title" class="section-shell">
+        <p class="eyebrow">Program unggulan</p>
+        <h2 id="program-title" class="section-title max-w-2xl">
+          Ruang akselerasi
+          <br />
+          ekonomi kreatif Sulsel.
+        </h2>
+        <p class="body-copy mt-5 max-w-2xl">
+          Empat arah program untuk mempertemukan talenta, mengembangkan kapasitas, dan membuka
+          peluang karya lokal.
+        </p>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <article class="overflow-hidden rounded-2xl border border-[#dcecef]">
+            <div class="asset-frame aspect-[16/9]">
+              <img
+                src="assets/images/programs/creative-academy.jpg"
+                alt="Sulsel Creative Academy"
+                loading="lazy"
+              />
+              <span class="asset-placeholder" hidden>Sulsel Creative Academy</span>
+            </div>
+            <div class="p-6 sm:p-7">
+              <p class="text-[10px] font-bold tracking-widest text-[#007e94]">
+                PELATIHAN &amp; WORKSHOP
+              </p>
+              <h3 class="mt-3 text-xl font-extrabold sm:text-2xl">Sulsel Creative Academy</h3>
+              <p class="body-copy mt-3">
+                Program pelatihan dan workshop untuk meningkatkan kapasitas dan daya saing pelaku
+                ekonomi kreatif.
+              </p>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-2xl border border-[#dcecef]">
+            <div class="asset-frame aspect-[16/9]">
+              <img
+                src="assets/images/programs/online-marketplace.jpg"
+                alt="Sulsel Online Marketplace"
+                loading="lazy"
+              />
+              <span class="asset-placeholder" hidden>Sulsel Online Marketplace</span>
+            </div>
+            <div class="p-6 sm:p-7">
+              <p class="text-[10px] font-bold tracking-widest text-[#007e94]">
+                AKSES PASAR DIGITAL
+              </p>
+              <h3 class="mt-3 text-xl font-extrabold sm:text-2xl">Sulsel Online Marketplace</h3>
+              <p class="body-copy mt-3">
+                Platform e-commerce untuk memperluas pemasaran produk dan jasa ekonomi kreatif
+                Sulsel.
+              </p>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-2xl border border-[#dcecef]">
+            <div class="asset-frame aspect-[16/9]">
+              <img
+                src="assets/images/programs/creative-district.jpg"
+                alt="Sulsel Creative District"
+                loading="lazy"
+              />
+              <span class="asset-placeholder" hidden>Sulsel Creative District</span>
+            </div>
+            <div class="p-6 sm:p-7">
+              <p class="text-[10px] font-bold tracking-widest text-[#007e94]">
+                KAWASAN &amp; BUDAYA
+              </p>
+              <h3 class="mt-3 text-xl font-extrabold sm:text-2xl">Sulsel Creative District</h3>
+              <p class="body-copy mt-3">
+                Kawasan kreatif yang terintegrasi dengan pariwisata, budaya, dan ekonomi kreatif
+                Sulsel.
+              </p>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-2xl border border-[#dcecef]">
+            <div class="asset-frame aspect-[16/9]">
+              <img src="assets/images/programs/creative-hub.jpg" alt="Sulsel Creative Hub" loading="lazy" />
+              <span class="asset-placeholder" hidden>Sulsel Creative Hub</span>
+            </div>
+            <div class="p-6 sm:p-7">
+              <p class="text-[10px] font-bold tracking-widest text-[#007e94]">
+                RUANG &amp; PENDAMPINGAN
+              </p>
+              <h3 class="mt-3 text-xl font-extrabold sm:text-2xl">Sulsel Creative Hub</h3>
+              <p class="body-copy mt-3">
+                Pusat kreatif dengan ruang kerja bersama, pelatihan, pendampingan usaha, dan akses
+                permodalan bagi pelaku ekonomi kreatif.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="portofolio" aria-labelledby="portfolio-title" class="bg-[#f7f9fa]">
+        <div class="section-shell">
+          <p class="eyebrow">Karya komunitas</p>
+          <h2 id="portfolio-title" class="section-title">Portofolio Anggota GEKRAFS</h2>
+          <p class="body-copy mt-4">Ragam karya dan ide dari pelaku kreatif GEKRAFS.</p>
+          <div id="portfolio-gallery" class="portfolio-grid mt-8"></div>
+          <noscript>
+            <p class="body-copy mt-6">Aktifkan JavaScript untuk melihat galeri dan detail karya.</p>
+          </noscript>
+        </div>
+      </section>
+      <section id="pengurus" aria-labelledby="pengurus-title" class="bg-[#f0f8fa]">
+        <div class="section-shell">
+          <p class="eyebrow">Organisasi</p>
+          <h2 id="pengurus-title" class="section-title">Kepengurusan 2026–2029</h2>
+          <p class="mt-4 text-xs font-bold tracking-widest text-[#007e94]">DPW SULAWESI SELATAN</p>
+          <p class="body-copy mt-5 max-w-2xl">
+            Bersama menguatkan gerakan, membangun kolaborasi, dan membawa karya kreatif Sulsel
+            menuju peluang yang lebih luas.
+          </p>
+          <div class="mt-8 grid grid-cols-1 gap-5 min-[360px]:grid-cols-2 lg:grid-cols-4">
+            <article class="overflow-hidden rounded-xl bg-white">
+              <div class="asset-frame aspect-[4/5]">
+                <img src="assets/images/pengurus/ketua.webp" alt="Foto Ketua DPW" loading="lazy" />
+                <span class="asset-placeholder" hidden>Foto Ketua DPW</span>
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold leading-6">Andi Rahmat Manggabarani</h3>
+                <p class="mt-1 text-xs leading-5 text-[#007e94]">Ketua DPW</p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-xl bg-white">
+              <div class="asset-frame aspect-[4/5]">
+                <img
+                  src="assets/images/pengurus/sekretaris.webp"
+                  alt="Foto Sekretaris"
+                  loading="lazy"
+                />
+                <span class="asset-placeholder" hidden>Foto Sekretaris</span>
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold leading-6">Nama segera diperbarui</h3>
+                <p class="mt-1 text-xs leading-5 text-[#007e94]">Sekretaris</p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-xl bg-white">
+              <div class="asset-frame aspect-[4/5]">
+                <img
+                  src="assets/images/pengurus/bendahara.webp"
+                  alt="Foto Bendahara"
+                  loading="lazy"
+                />
+                <span class="asset-placeholder" hidden>Foto Bendahara</span>
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold leading-6">Nama segera diperbarui</h3>
+                <p class="mt-1 text-xs leading-5 text-[#007e94]">Bendahara</p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-xl bg-white">
+              <div class="asset-frame aspect-[4/5]">
+                <img
+                  src="assets/images/pengurus/wakil-ketua.webp"
+                  alt="Foto Wakil Ketua"
+                  loading="lazy"
+                />
+                <span class="asset-placeholder" hidden>Foto Wakil Ketua</span>
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold leading-6">Nama segera diperbarui</h3>
+                <p class="mt-1 text-xs leading-5 text-[#007e94]">Wakil Ketua</p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-xl bg-white">
+              <div class="asset-frame aspect-[4/5]">
+                <img src="assets/images/pengurus/dewan.webp" alt="Foto Dewan" loading="lazy" />
+                <span class="asset-placeholder" hidden>Foto Dewan</span>
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold leading-6">Nama segera diperbarui</h3>
+                <p class="mt-1 text-xs leading-5 text-[#007e94]">Dewan</p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-xl bg-white">
+              <div class="asset-frame aspect-[4/5]">
+                <img
+                  src="assets/images/pengurus/wakil-sekretaris.webp"
+                  alt="Foto Wakil Sekretaris"
+                  loading="lazy"
+                />
+                <span class="asset-placeholder" hidden>Foto Wakil Sekretaris</span>
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold leading-6">Nama segera diperbarui</h3>
+                <p class="mt-1 text-xs leading-5 text-[#007e94]">Wakil Sekretaris</p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-xl bg-white">
+              <div class="asset-frame aspect-[4/5]">
+                <img
+                  src="assets/images/pengurus/wakil-bendahara.webp"
+                  alt="Foto Wakil Bendahara"
+                  loading="lazy"
+                />
+                <span class="asset-placeholder" hidden>Foto Wakil Bendahara</span>
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold leading-6">Nama segera diperbarui</h3>
+                <p class="mt-1 text-xs leading-5 text-[#007e94]">Wakil Bendahara</p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-xl bg-white">
+              <div class="asset-frame aspect-[4/5]">
+                <img
+                  src="assets/images/pengurus/ketua-bidang.webp"
+                  alt="Foto Bidang & Divisi / Ketua Bidang"
+                  loading="lazy"
+                />
+                <span class="asset-placeholder" hidden>Foto Bidang & Divisi / Ketua Bidang</span>
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold leading-6">Nama segera diperbarui</h3>
+                <p class="mt-1 text-xs leading-5 text-[#007e94]">
+                  Bidang &amp; Divisi / Ketua Bidang
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="bergabung" aria-labelledby="gabung-title" class="bg-[#007e94] text-white">
+        <div class="section-shell grid items-center gap-10 lg:grid-cols-[1.4fr_1fr]">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-[#b9edf3]">
+              Mari bergerak bersama
+            </p>
+            <h2 id="gabung-title" class="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl">
+              Siap bergabung
+              <br />
+              dengan GEKRAFS?
+            </h2>
+            <p class="mt-5 max-w-xl text-sm leading-7 text-[#e7f2f5]">
+              Ambil bagian dalam gerakan ekonomi kreatif Sulawesi Selatan. Mari membuka ruang
+              belajar, berkarya, dan berkolaborasi.
+            </p>
+            <div class="mt-7">
+              <a
+                href="https://wa.me/6282292998004?text=Halo%20GEKRAFS%20Sulawesi%20Selatan%2C%20saya%20ingin%20mendapatkan%20informasi%20untuk%20bergabung."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="
+                  inline-flex min-h-[48px] items-center justify-center gap-4 rounded-lg bg-[#00acc6]
+                  px-6 py-3 text-center text-sm font-bold text-white transition hover:bg-[#007e94]
+                  w-full sm:w-auto
+                "
+              >
+                Bergabung dengan GEKRAFS
+                <span aria-hidden="true">↗</span>
+                <span class="sr-only">melalui WhatsApp (tab baru)</span>
+              </a>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-white/25 bg-white/5 p-7">
+            <h3 class="text-xl font-bold">
+              Sekretariat GEKRAFS
+              <br />
+              Sulawesi Selatan
+            </h3>
+            <p class="mt-4 text-sm leading-7 text-[#e7f2f5]">
+              Informasi keanggotaan dan program dapat diperoleh melalui sekretariat.
+            </p>
+            <p class="mt-6 text-xs font-bold tracking-widest text-[#ffd344]">WHATSAPP</p>
+            <a
+              class="
+                mt-2 inline-block py-2 text-lg font-bold underline decoration-white/40
+                underline-offset-4 hover:decoration-white
+              "
+              href="https://wa.me/6282292998004?text=Halo%20GEKRAFS%20Sulawesi%20Selatan%2C%20saya%20ingin%20mendapatkan%20informasi%20untuk%20bergabung."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              +62 822-9299-8004
+              <span class="sr-only">(tab baru)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#052b3c] text-white">
+      <div class="section-shell grid gap-10 sm:grid-cols-[2fr_1fr]">
+        <div>
+          <a href="#beranda" class="flex items-center gap-3">
+            <span class="rounded-lg bg-white p-2">
+              <img
+                src="assets/logo/logo-gekrafs.png"
+                alt="Logo GEKRAFS"
+                width="64"
+                height="48"
+                class="h-12 w-16 object-contain"
+                loading="lazy"
+              />
+            </span>
+            <span class="font-extrabold">
+              GEKRAFS
+              <span class="mt-1 block text-[10px] font-normal tracking-widest">
+                SULAWESI SELATAN
+              </span>
+            </span>
+          </a>
+          <p class="mt-5 max-w-lg text-sm leading-7 text-[#c3d9df]">
+            Wadah kolaborasi komunitas, seniman, pelaku usaha, dan pekerja kreatif untuk ekosistem
+            ekonomi kreatif Sulawesi Selatan yang kuat dan berkelanjutan.
+          </p>
+        </div>
+        <div>
+          <h2 class="font-bold">Jelajahi</h2>
+          <nav
+            aria-label="Navigasi footer"
+            class="mt-4 flex flex-col items-start gap-1 text-sm text-[#c3d9df]"
+          >
+            <a class="py-2 hover:text-white" href="#beranda">Beranda</a>
+            <a class="py-2 hover:text-white" href="#tentang">Tentang GEKRAFS</a>
+            <a class="py-2 hover:text-white" href="#program">Program unggulan</a>
+            <a class="py-2 hover:text-white" href="#portofolio">Portofolio</a>
+            <a class="py-2 hover:text-white" href="#pengurus">Organisasi Kepengurusan</a>
+          </nav>
+        </div>
+      </div>
+      <div class="border-t border-white/15">
+        <div
+          class="
+            mx-auto flex max-w-7xl flex-col gap-4 px-6 py-6 text-xs leading-6 text-[#c3d9df]
+            sm:flex-row sm:justify-between lg:px-8
+          "
+        >
+          <p>© 2026 DPW GEKRAFS Sulawesi Selatan.</p>
+          <p>Dari Sulsel, untuk masa depan ekonomi kreatif.</p>
+        </div>
+      </div>
+    </footer>
+    <template id="portfolio-card-template">
+      <button type="button" class="portfolio-card" aria-haspopup="dialog">
+        <span class="portfolio-placeholder" aria-hidden="true"></span>
+        <img class="portfolio-cover" loading="lazy" decoding="async" alt="" />
+        <span class="portfolio-overlay">
+          <span class="portfolio-card-title"></span>
+          <span class="portfolio-creator">
+            <span class="portfolio-avatar">
+              <span class="portfolio-initial" aria-hidden="true"></span>
+              <img class="portfolio-avatar-image" alt="" loading="lazy" hidden />
+            </span>
+            <span class="portfolio-creator-name"></span>
+          </span>
+        </span>
+      </button>
+    </template>
+    <dialog id="portfolio-dialog" aria-labelledby="portfolio-detail-title">
+      <button type="button" class="portfolio-close" aria-label="Tutup detail karya" autofocus>
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="portfolio-detail-layout">
+        <div class="portfolio-detail-media">
+          <p id="portfolio-detail-placeholder">Gambar karya sedang disiapkan.</p>
+          <img id="portfolio-detail-image" alt="" hidden />
+        </div>
+        <div class="portfolio-detail-copy">
+          <p id="portfolio-detail-category" class="eyebrow"></p>
+          <h2 id="portfolio-detail-title" class="mt-3 text-2xl font-extrabold"></h2>
+          <p id="portfolio-detail-description" class="body-copy mt-5"></p>
+          <div class="portfolio-detail-creator">
+            <span class="portfolio-avatar">
+              <span id="portfolio-detail-initial" aria-hidden="true"></span>
+              <img id="portfolio-detail-avatar" alt="" hidden />
+            </span>
+            <div>
+              <p id="portfolio-detail-creator" class="font-bold"></p>
+              <p id="portfolio-detail-location" class="body-copy"></p>
+            </div>
+          </div>
+          <a
+            id="portfolio-detail-contact"
+            class="portfolio-contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            hidden
+          >
+            Hubungi kreator <span class="sr-only">(tab baru)</span>
+          </a>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+/* Tailwind handles responsive layouts; these rules cover shared typography and behavior. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+/* Keep navigation, hero, and highlights within the initial viewport when content fits. */
+:root {
+  --navigation-height: 77px;
+  --highlights-height: 80px;
+}
+.hero-fullscreen {
+  min-height: calc(100vh - var(--navigation-height) - var(--highlights-height));
+  min-height: calc(100svh - var(--navigation-height) - var(--highlights-height));
+}
+.hero-content {
+  padding-block: clamp(24px, 5vh, 64px);
+  padding-block: clamp(24px, 5svh, 64px);
+}
+.hero-highlights {
+  height: var(--highlights-height);
+}
+@media (min-width: 640px) {
+  :root {
+    --highlights-height: 64px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --navigation-height: 95px;
+  }
+}
+[hidden] {
+  display: none !important;
+}
+* {
+  box-sizing: border-box;
+}
+section[id] {
+  scroll-margin-top: 8px;
+}
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+:focus-visible {
+  outline: 3px solid #e6ab00;
+  outline-offset: 5px;
+}
+.section-shell {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 48px 24px;
+}
+.eyebrow {
+  color: #007e94;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.section-title {
+  margin-top: 12px;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  overflow-wrap: break-word;
+}
+.body-copy {
+  color: #506771;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.asset-frame {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #e3f2f3, #c5e1e7);
+}
+.asset-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  color: #476e7a;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+}
+.nav-links > a {
+  padding-block: 14px;
+}
+.nav-links > a:hover,
+.nav-links > a[aria-current='location'] {
+  color: #007e94;
+}
+#mobile-menu > a {
+  display: block;
+}
+#mobile-menu > a:last-child {
+  display: flex;
+  margin-top: 8px;
+  color: white;
+}
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  transform: translateY(-200%);
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #ffd344;
+  color: #102b37;
+  font-weight: 700;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+@media (min-width: 768px) {
+  .section-shell {
+    padding-block: 72px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-shell {
+    padding: 88px 32px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0s !important;
+  }
+}
+
+/* Shared presentation for repeated static cards; Tailwind owns the responsive grid. */
+.sector-card {
+  display: flex;
+  min-height: 76px;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  border-radius: 0.5rem;
+  background: white;
+  padding: 12px;
+}
+.sector-card > [data-lucide],
+.sector-card > svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: #00acc6;
+}
+.sector-card > span {
+  min-width: 0;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1rem;
+  overflow-wrap: anywhere;
+  color: #102b37;
+}
+@media (min-width: 640px) {
+  .sector-card {
+    gap: 1rem;
+    padding: 1rem 18px;
+  }
+  .sector-card > [data-lucide],
+  .sector-card > svg {
+    width: 22px;
+    height: 22px;
+  }
+  .sector-card > span {
+    font-size: 13px;
+    line-height: 1.25rem;
+  }
+}
+.asset-frame > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-ornament {
+  position: absolute;
+  right: clamp(12px, 2vw, 32px);
+  bottom: 12px;
+  width: clamp(48px, 11vw, 168px);
+  height: auto;
+  object-fit: contain;
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Reserve room for the ornament where it crosses the photo and caption. */
+.about-caption {
+  padding: 24px 104px 24px 24px;
+}
+
+.about-ornament {
+  position: absolute;
+  z-index: 20;
+  top: -36px;
+  right: 12px;
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (min-width: 640px) {
+  .about-caption {
+    padding-right: 144px;
+  }
+
+  .about-ornament {
+    top: -54px;
+    right: 16px;
+    width: 116px;
+  }
+}
